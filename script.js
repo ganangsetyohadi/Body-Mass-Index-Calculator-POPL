@@ -171,6 +171,48 @@ function animateTextToDiv(text, Div, speed, callback) {
     }
   };
   
+
+  function calculateCalories() {
+    const weight = document.getElementById('calorie-weight').value;
+    const height = document.getElementById('calorie-height').value;
+    const age = document.getElementById('age').value;
+    const gender = document.getElementById('gender').value;
+    const activityLevel = document.getElementById('activity-level').value;
+  
+    if (!weight || !height || !age) {
+      document.getElementById('calorie-result').innerHTML = 'Lengkapi semua input untuk menghitung kalori harian Anda.';
+      return;
+    }
+  
+    let bmr;
+    if (gender === 'male') {
+      bmr = 88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age);
+    } else {
+      bmr = 447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age);
+    }
+  
+    let calorieNeeds;
+    switch (activityLevel) {
+      case 'sedentary':
+        calorieNeeds = bmr * 1.2;
+        break;
+      case 'light':
+        calorieNeeds = bmr * 1.375;
+        break;
+      case 'moderate':
+        calorieNeeds = bmr * 1.55;
+        break;
+      case 'active':
+        calorieNeeds = bmr * 1.725;
+        break;
+      case 'very-active':
+        calorieNeeds = bmr * 1.9;
+        break;
+    }
+  
+    document.getElementById('calorie-result').innerHTML = `Kebutuhan kalori harian Anda adalah sekitar ${Math.round(calorieNeeds)} kalori.`;
+  }
+  
   // // Fungsi untuk mengosongkan input berat
   // function clearWeight() {
   //   document.getElementById("weight").value = "";

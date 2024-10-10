@@ -93,6 +93,50 @@
     </section>
     <!-- BMI Calculator Section End -->
 
+    <!-- Calorie Calculator Section Start -->
+<section id="calorie-calculator" class="calculator">
+  <h2>Calorie Intake Calculator</h2>
+  <div class="calculator-sec">
+    <div class="calculation">
+      <div>
+        <label for="calorie-weight">Berat (kg)</label>
+        <input type="number" id="calorie-weight" name="calorie-weight" placeholder="Masukkan berat badan" required />
+      </div>
+      <div>
+        <label for="calorie-height">Tinggi (cm)</label>
+        <input type="number" id="calorie-height" name="calorie-height" placeholder="Masukkan tinggi badan" required />
+      </div>
+      <div>
+        <label for="age">Umur (tahun)</label>
+        <input type="number" id="age" name="age" placeholder="Masukkan umur" required />
+      </div>
+      <div>
+        <label for="gender">Jenis Kelamin</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Laki-laki</option>
+          <option value="female">Perempuan</option>
+        </select>
+      </div>
+      <div>
+        <label for="activity-level">Level Aktivitas</label>
+        <select id="activity-level" name="activity-level" required>
+          <option value="sedentary">Sedentari (jarang berolahraga)</option>
+          <option value="light">Ringan (1-3 kali per minggu)</option>
+          <option value="moderate">Sedang (3-5 kali per minggu)</option>
+          <option value="active">Aktif (6-7 kali per minggu)</option>
+          <option value="very-active">Sangat Aktif (dua kali sehari)</option>
+        </select>
+      </div>
+      <button id="calorieButton" onclick="calculateCalories()">Hitung Kalori Harian</button>
+    </div>
+    <div class="result">
+      <div id="calorie-result">Masukkan data Anda untuk menghitung kebutuhan kalori harian.</div>
+    </div>
+  </div>
+</section>
+<!-- Calorie Calculator Section End -->
+
+
     <!-- About Section Start-->
     <section id="about" class="about">
       <h2>About Us</h2>

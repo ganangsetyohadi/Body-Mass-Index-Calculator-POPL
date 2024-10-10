@@ -420,4 +420,108 @@
   th {
     background-color: #f0f0f0;
   }
-  
+  /* Calculator Section */
+.calculator label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #333; /* Warna teks abu-abu tua */
+}
+
+.calculator input[type="number"] {
+  padding-left: 30px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.calculator button {
+  width: 100%;
+  padding: 15px;
+  background-color: #fe8b00; /* Warna oranye utama */
+  color: #fff; /* Warna teks putih */
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+}
+
+.calculator button:hover:enabled {
+  background-color: #fea300; /* Warna hover lebih terang */
+  transform: translateY(-3px); /* Efek hover bergerak sedikit ke atas */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Menambah shadow saat hover */
+}
+
+.calculator button:hover:enabled {
+  background-color: #fea300;
+}
+
+.calculator-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculation {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.result {
+  flex: 1;
+  margin-top: 2rem;
+  margin: 0 20px;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Gaya untuk hasil dan saran */
+#result #advice {
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: left;
+}
+
+#advice {
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator {
+    max-width: 100%;
+  }
+  .calculator-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calculation,
+  .result {
+    width: 100%;
+  }
+  .result {
+    margin-top: 20px;
+  }
+}
+
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed; /* Menunjukkan bahwa tombol tidak dapat diklik */
+  box-shadow: none; /* Menghilangkan shadow pada tombol disabled */
+}
