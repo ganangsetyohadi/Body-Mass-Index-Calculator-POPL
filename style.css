@@ -426,7 +426,7 @@
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
-  color: #333; /* Warna teks abu-abu tua */
+  color: #fff; /* Warna teks abu-abu tua */
 }
 
 .calculator input[type="number"] {
