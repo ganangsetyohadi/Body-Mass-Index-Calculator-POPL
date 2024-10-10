@@ -2,7 +2,7 @@
 # Body Mass Index Calculator
 
 ## Deskripsi
-Body Mass Index Calculator adalah sebuah aplikasi web yang memungkinkan pengguna untuk menghitung Indeks Massa Tubuh (BMI) berdasarkan berat dan tinggi badan mereka. Aplikasi ini memberikan saran kesehatan berdasarkan hasil perhitungan BMI, membantu pengguna untuk memahami kategori berat badan mereka dan langkah-langkah yang dapat diambil untuk mencapai berat badan yang sehat.
+**Body Mass Index Calculator** adalah aplikasi web yang memungkinkan pengguna untuk menghitung Indeks Massa Tubuh (BMI) berdasarkan berat dan tinggi badan mereka. Aplikasi ini memberikan saran kesehatan berdasarkan hasil perhitungan BMI, membantu pengguna memahami kategori berat badan mereka dan langkah-langkah yang dapat diambil untuk mencapai berat badan yang sehat.
 
 ## Fitur
 - **Perhitungan BMI:** Masukkan berat badan (dalam kg) dan tinggi badan (dalam cm) untuk menghitung nilai BMI.
@@ -12,7 +12,6 @@ Body Mass Index Calculator adalah sebuah aplikasi web yang memungkinkan pengguna
 
 ## Struktur Proyek
 Proyek ini terdiri dari beberapa file utama:
-
 - `index.html`: Halaman utama yang berisi struktur HTML untuk aplikasi.
 - `style.css`: File CSS untuk mengatur tampilan dan gaya halaman.
 - `script.js`: File JavaScript yang berisi logika untuk menghitung BMI dan menampilkan saran.
@@ -29,7 +28,7 @@ Proyek ini terdiri dari beberapa file utama:
 
 3. **Masukkan Data:**
    - Isi kolom Berat (kg) dan Tinggi (cm).
-   - Klik tombol "Check Mulai" untuk menghitung BMI.
+   - Klik tombol **"Check Mulai"** untuk menghitung BMI.
 
 4. **Lihat Hasil:**
    Hasil perhitungan BMI dan kategori berat badan akan ditampilkan bersama dengan saran kesehatan yang sesuai.
@@ -47,6 +46,5 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ## Kontak
 Untuk pertanyaan atau umpan balik, silakan hubungi:
-- Nama: Ganang Setyo Hadi
-- Email: ganangsetyohadi@gmail.com
-```
+- **Nama:** Ganang Setyo Hadi
+- **Email:** [ganangsetyohadi@gmail.com](mailto:ganangsetyohadi@gmail.com)
