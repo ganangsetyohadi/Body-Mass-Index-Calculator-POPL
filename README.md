@@ -1,4 +1,3 @@
-```markdown
 # Body Mass Index Calculator
 
 ## Deskripsi
